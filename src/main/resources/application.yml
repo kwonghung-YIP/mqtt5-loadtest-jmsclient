@@ -1,0 +1,15 @@
+solace:
+  jms:
+    host: smf://192.168.19.128:55555
+    #host: smf://192.168.19.128:55003
+    msg-vpn: default
+    client-name: springboot-jms-client
+    client-username: admin
+    client-password: admin
+  
+#logging:
+#  level:
+#    com.solacesystems: debug
+#    javax.jms: debug
+#    org.springframework.jms: debug
+    
