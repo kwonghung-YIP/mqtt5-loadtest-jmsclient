@@ -32,6 +32,14 @@ set JVM_OPTS=%JVM_OPTS% -Dodds.noOFHorse=14
 java %JVM_OPTS% -jar mqtt5-loadtest-jmsclient-0.0.1-SNAPSHOT.jar
 ```
 
+### build docker image with jib maven plugin
+```bash
+mvn compile jib:build \
+  -Djib.to.image=<docker hub image path> \
+  -Djib.to.auth.username=<docker hub login> \
+  -Djib.to.auth.password=<docker hub password>
+```
+
 ### run as docker image
 ```bash
 docker run -it \
