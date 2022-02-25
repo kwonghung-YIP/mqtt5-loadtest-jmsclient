@@ -13,6 +13,7 @@ set JVM_OPTS=%JVM_OPTS% -Dsolace.jms.client-password=<to-be-provided>
 set JVM_OPTS=%JVM_OPTS% -Ddbl-odds.topic-zip=hk/d//prdt/wager/evt/01/upd/racing/20140120/s1/01/dbl/odds/full
 set JVM_OPTS=%JVM_OPTS% -Ddbl-odds.f1=34
 set JVM_OPTS=%JVM_OPTS% -Ddbl-odds.f2=34
+set JVM_OPTS=%JVM_OPTS% -Ddbl-odds.fixed-rate=500
 
 java %JVM_OPTS% -jar mqtt5-loadtest-jmsclient-0.0.1-SNAPSHOT.jar
 ```
